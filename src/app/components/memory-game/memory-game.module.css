@@ -1,0 +1,68 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('mg.jpeg');
+    background-size: cover;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    zoom: 80%;
+    padding-bottom: 10%;
+}
+
+.title {
+    font-size: 3rem;
+    color: #282c34;
+}
+
+.moves {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #282c34;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    grid-gap: 10px;
+}
+
+.card {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #282c34;
+    border-radius: 10px;
+}
+
+.cardContent {
+    font-size: 4rem;
+    transition: transform 0.6s;
+    backface-visibility: hidden;
+}
+
+.winMessage {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.resetButton {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #ff3e30;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.resetButton:hover {
+    background-color: #ff1f1f;
+}

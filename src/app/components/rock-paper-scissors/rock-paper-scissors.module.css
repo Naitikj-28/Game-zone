@@ -1,0 +1,106 @@
+.total {
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    background-image: url('rps.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+.hh1 {
+    font-size: 4rem;
+    color: rgb(145, 255, 0);
+    background-color: rgba(76, 175, 80, 0.8);
+    margin-bottom: 20px;
+    padding: 1.3%;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.choiceButton {
+    padding: 15px 30px;
+    font-size: 2.5rem;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.choiceButton:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+.emoji {
+    font-size: 3rem;
+}
+
+.results {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 20px 0;
+    padding: 3%;
+    border-radius: 12px;
+    background-color: rgba(76, 175, 80, 0.8);
+}
+
+.resetButton {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #ff3e30;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.resetButton:hover {
+    background-color: #ff1f1f;
+    transform: scale(1.05);
+}
+
+.countdown {
+    font-size: 2rem;
+    color: yellow;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .hh1 {
+        font-size: 3rem;
+    }
+
+    .choiceButton {
+        font-size: 2rem;
+        padding: 10px 20px;
+    }
+
+    .results {
+        font-size: 1.5rem;
+    }
+
+    .countdown {
+        font-size: 1.5rem;
+    }
+}

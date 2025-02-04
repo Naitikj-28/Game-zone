@@ -55,7 +55,7 @@ function calculateWinner(squares: (string | null)[]) {
     [2, 4, 6],
   ];
 
-  for (let line of lines) {
+  for (const line of lines) {
     const [a, b, c] = line;
     if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
       return squares[a];

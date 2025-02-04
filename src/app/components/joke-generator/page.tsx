@@ -20,9 +20,11 @@ const JokeGenerator = () => {
       }
       setLoading(false);
     } catch (error) {
+      console.error('Error fetching joke:', error);
       setJoke('Failed to fetch a joke. Please try again.');
       setLoading(false);
     }
+    
   };
 
   useEffect(() => {

@@ -53,7 +53,7 @@
 .pauseButton {
     border: 2px solid yellow;
     background-color: #f39c12;
-    padding: 10%;
+    padding: 20px;
 }
 
 @keyframes fadeIn {

@@ -22,6 +22,7 @@
     font-size: 2rem;
     margin: 20px 0;
     animation: fadeIn 1s ease-in-out;
+    max-width: 50vw;
 }
 
 .jokeButton {

@@ -82,7 +82,7 @@ export default function MemoryGame() {
             </div>
             {matchedIndices.length === cards.length && (
                 <div className={styles.winMessage}>
-                    <h2>You've matched all pairs!</h2>
+                    <h2>You&apos;ve matched all pairs!</h2>
                     <button className={styles.resetButton} onClick={resetGame}>Play Again</button>
                 </div>
             )}

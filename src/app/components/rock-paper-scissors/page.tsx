@@ -80,7 +80,7 @@ export default function RockPaperScissors() {
             {userChoice && showResult && (
                 <div className={styles.results}>
                     <h2>Your choice: {userChoice}</h2>
-                    <h2>Computer's choice: {computerChoice}</h2>
+                    <h2>Computer&apos;s choice: {computerChoice}</h2>
                     <h2>{result}</h2>
                 </div>
             )}

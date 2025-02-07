@@ -8,18 +8,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
+    width: 100%;
     background-image: url('sg.jpeg');
     background-size: cover;
     background-position: center;
     color: #fff;
     font-family: Arial, sans-serif;
-    padding: 0 10px;
+    padding: 10px;
+    text-align: center;
 }
 
 .title {
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 4vw, 2rem);
     margin-bottom: 10px;
     color: red;
     background-color: #fff;
@@ -40,8 +41,8 @@
 }
 
 .cell {
-    width: 20px;
-    height: 20px;
+    width: clamp(15px, 2vw, 20px);
+    height: clamp(15px, 2vw, 20px);
 }
 
 .snakeHead {
@@ -61,32 +62,26 @@
 
 .score {
     margin-top: 5px;
-    font-size: 1.5rem;
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
 }
 
 .resetGame {
-    font-size: 1.8rem;
+    font-size: clamp(1.5rem, 4vw, 1.8rem);
     color: #ffcc00;
     border: 3px solid #00ff00;
     padding: 1%;
     border-radius: 20%;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background-color 0.3s;
 }
 
-@media (max-width: 768px) {
-    .title {
-        font-size: 1.5rem;
-    }
+.resetGame:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 255, 0, 0.2);
+}
 
-    .cell {
-        width: 15px;
-        height: 15px;
-    }
-
-    .score {
-        font-size: 1.2rem;
-    }
-
-    .gameOver {
-        font-size: 1.5rem;
-    }
+.gameOver {
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
+    color: red;
+    font-weight: bold;
 }
